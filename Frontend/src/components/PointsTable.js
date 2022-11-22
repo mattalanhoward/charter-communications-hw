@@ -1,5 +1,4 @@
 import Table from 'react-bootstrap/Table';
-import customerData from '../customerData';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -9,8 +8,8 @@ const PointsTable = () => {
 
   useEffect(() => {
     const fetchCustomerData = async () => {
-      const { data }  = await axios.get('../customerData')
-      console.log(data)
+      const { data }  = await axios.get('/api/customersdata')
+      console.log(`backend data`, data)
 
       setCustomerData(data)
     }

@@ -4,7 +4,8 @@
   "description": "Charter Communications Loyalty Program",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mattalanhoward/charter-communications-hw/issues"
   },
-  "homepage": "https://github.com/mattalanhoward/charter-communications-hw#readme"
+  "homepage": "https://github.com/mattalanhoward/charter-communications-hw#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

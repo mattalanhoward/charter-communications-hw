@@ -1,6 +1,5 @@
 
-import './App.css';
-import PointsTable from './PointsTable';
+import PointsTable from './components/PointsTable';
 
 function App() {
   return (
