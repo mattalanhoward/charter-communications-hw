@@ -27,7 +27,7 @@ const PointsTable = () => {
 	};
 
 	customersData.map((user) => {
-		user.purchasePoints = calcPts(user.purchaseTotal);
+		return (user.purchasePoints = calcPts(user.purchaseTotal));
 	});
 
 	const sumUserMonthPts = (userId, month) => {
